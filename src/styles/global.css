@@ -1,0 +1,196 @@
+:root {
+  --predecy-bg: #f0eeff;
+  --predecy-purple: #6c47ff;
+  --predecy-purple-light: #8b6dff;
+  --predecy-teal: #00c9a7;
+  --predecy-dark: #1a1a2e;
+  --predecy-text: #2d2d4e;
+  --predecy-muted: #9090b0;
+  --predecy-card: #ffffff;
+  --predecy-border: #e8e4ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #app {
+  height: 100%;
+  background: var(--predecy-bg);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Framework7 overrides */
+.framework7-root {
+  background: var(--predecy-bg) !important;
+}
+
+.page-content {
+  background: var(--predecy-bg) !important;
+}
+
+.navbar, .toolbar {
+  background: #fff !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Gradient background for app header areas */
+.page-bg-gradient {
+  background: linear-gradient(160deg, #e8e0ff 0%, #f5f0ff 40%, #f0eeff 100%);
+}
+
+/* Card styles */
+.predecy-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(108, 71, 255, 0.08);
+  padding: 16px;
+}
+
+/* Purple gradient button */
+.btn-purple {
+  background: linear-gradient(135deg, var(--predecy-purple) 0%, var(--predecy-purple-light) 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Teal gradient button */
+.btn-teal {
+  background: linear-gradient(135deg, var(--predecy-teal) 0%, #00e5bf 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Circular progress */
+.circle-progress {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Custom tab bar */
+.predecy-tabbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  border-top: 1px solid var(--predecy-border);
+  padding: 8px 0 env(safe-area-inset-bottom, 8px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.tab-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 16px;
+  cursor: pointer;
+  color: var(--predecy-muted);
+  font-size: 11px;
+  font-weight: 500;
+  border: none;
+  background: none;
+}
+
+.tab-item.active {
+  color: var(--predecy-purple);
+}
+
+.tab-item svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* Linear progress bar */
+.progress-bar-track {
+  background: var(--predecy-border);
+  border-radius: 99px;
+  height: 6px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 99px;
+  background: linear-gradient(90deg, var(--predecy-purple) 0%, var(--predecy-teal) 100%);
+}
+
+/* Menu item row */
+.menu-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--predecy-border);
+  cursor: pointer;
+}
+
+.menu-row:last-child {
+  border-bottom: none;
+}
+
+.menu-row-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--predecy-text);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Prediction option bar */
+.prediction-option {
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prediction-option.purple {
+  background: linear-gradient(135deg, var(--predecy-purple), var(--predecy-purple-light));
+}
+
+.prediction-option.light {
+  background: rgba(108, 71, 255, 0.12);
+  color: var(--predecy-purple);
+}
+
+/* Stat mini card */
+.stat-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 2px 12px rgba(108,71,255,0.07);
+}
+
+/* Scrollable content area */
+.scroll-content {
+  overflow-y: auto;
+  padding-bottom: 80px;
+}
